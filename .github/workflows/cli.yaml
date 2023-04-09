@@ -17,7 +17,6 @@ jobs:
 
       - name: Install dependencies
         run: |
-          cd .. && dir * && \
           cd capstone_project && \
           cd hello* && \
           npm install
