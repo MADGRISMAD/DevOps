@@ -17,6 +17,7 @@ jobs:
 
       - name: Install dependencies
         run: |
+          cd .. && dir * && \
           npm install
 
       - name: Run tests
