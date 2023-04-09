@@ -23,10 +23,14 @@ jobs:
 
       - name: Run tests
         run: |
+          cd capstone_project && \
+          cd hello* && \
           npm test
 
       - name: Build container
         if: success()
         run: |
+          cd capstone_project && \
+          cd hello* && \
           docker build -t my-react-app .
 
