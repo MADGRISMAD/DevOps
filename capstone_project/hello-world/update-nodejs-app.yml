@@ -1,4 +1,4 @@
- name: Update Node.js application to display "Hello DevOps!"
+- name: Update Node.js application to display "Hello DevOps!"
   hosts: my-nodejs-server
   become: true
 
