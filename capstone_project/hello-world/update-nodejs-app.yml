@@ -1,0 +1,16 @@
+ name: Update Node.js application to display "Hello DevOps!"
+  hosts: my-nodejs-server
+  become: true
+
+  tasks:
+    - name: Update app.js file
+      replace:
+        path: /capstone_project/hello-world/src/app.js
+        regexp: 'Hello World!'
+        replace: 'Hello DevOps!'
+
+    - name: Restart Node.js service
+      systemd:
+        name: nodejs.service
+        state: restarted
+
