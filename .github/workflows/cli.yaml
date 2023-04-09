@@ -17,6 +17,9 @@ jobs:
 
       - name: Install dependencies
         run: |
+          cd .. && \
+          cd .. && \
+          cd capstone_project/hello-world && \
           npm install
 
       - name: Run tests
