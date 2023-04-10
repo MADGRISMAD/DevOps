@@ -13,8 +13,7 @@ RUN npm install
 # Copy the rest of the app's code to the container
 COPY . .
 
-# Build the app for production
-RUN npm run build
+
 
 # Expose port 3000 for the app to listen on
 EXPOSE 3000
