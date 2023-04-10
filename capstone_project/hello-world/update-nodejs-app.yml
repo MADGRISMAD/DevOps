@@ -1,5 +1,5 @@
 - name: Update Node.js application to display "Hello DevOps!"
-  hosts: all
+  hosts: localhost
   become: true
 
   tasks:
